@@ -20,7 +20,7 @@ services:
         source: wordpress_data
         target: /var/www/html
       # - type: bind
-      #   source: ./wordpress/
+      #   source: ./wordpress
       #   target: /var/www/html
     networks:
       - trial-mysql_backend
