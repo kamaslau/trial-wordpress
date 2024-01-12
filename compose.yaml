@@ -10,10 +10,11 @@ networks:
 services:
   wordpress:
     container_name: wordpress
-    image: wordpress:latest
+    image: wordpress
     restart: always
+    env_file: .env
     ports:
-      - 80:80
+      - ${PORT-80}:80
     volumes:
       - type: volume
         source: wordpress_data
