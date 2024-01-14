@@ -18,8 +18,9 @@ docker compose up -d
 Update existing composed containers:
 
 ```bash
-docker compose pull # fetch latest images
-docker compose down && docker compose up -d # recompose services
+docker compose pull && \
+docker compose down && \
+docker compose up -d
 ```
 
 ### Start services individually
